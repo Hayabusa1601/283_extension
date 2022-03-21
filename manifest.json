@@ -1,11 +1,13 @@
 {
     "name":"283_desk",
-    "version":"1.0.0",
-    "manifest_version":2,
+    "version":"0.0.1",
+    "manifest_version": 3,
     "description":"support playing IDOLM@STER SHINY COLORS.",
     "content_scripts": [{
-        "matches": [ "https://*/*", "http;//*/*"],
-        "js": ["test.js"]
-    }]
-    
+        "matches": [ "https://*/", "http://*/"],
+        "js": ["main.js"]
+    }],
+    "action": {
+        "default_popup":"popup.html"
+    }
 }

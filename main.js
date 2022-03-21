@@ -1,8 +1,8 @@
-void function open_shiny_colors() {
-    window.open('https://shinycolors.enza.fun/home')
+function open_shiny_colors() {
+  window.open("https://shinycolors.enza.fun/", null, 'width=1136,height=640');
 }
 
-var btn = document.getElementById('start_up');
-
-btn.addEventListener('click', open_shiny_colors, false)
+document.getElementById("start_up").onclick = function() {
+    open_shiny_colors();
+};
 

@@ -23,11 +23,11 @@ function open_shiny_colors( windowSize ) {
       break;
     case 'big':
       width = 1722;
-      height = 1020;
+      height = 1000;
       break;
     case 'small': 
       width = 570;
-      height = 364;
+      height = 353;
       break;
     default:
       alert('error!')
@@ -38,7 +38,7 @@ function open_shiny_colors( windowSize ) {
 
   /*起動*/ 
   var widowFeatures = 'width=' + width + ',height=' + height;
-  alert(widowFeatures);
+  //alert(widowFeatures);
   window.open("https://shinycolors.enza.fun/", 'shinycolors', widowFeatures);
 
 

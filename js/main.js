@@ -13,9 +13,9 @@ function get_window_size() {
   return checkValue;//チェックが入ってる値を返す
 }
 
-function open_shiny_colors( windowSize ) {
+function open_shiny_colors( windowSize, cwidth, cheight ) {
   let width, height;
-
+  
   switch (windowSize) {
     case 'original':
       width = 1148;
@@ -29,6 +29,10 @@ function open_shiny_colors( windowSize ) {
       width = 570;
       height = 353;
       break;
+    case 'custom':
+      width = cwidth;
+      height = cheight;
+      break;
     default:
       alert('error!')
       width = 1148;
@@ -38,16 +42,19 @@ function open_shiny_colors( windowSize ) {
 
   /*起動*/ 
   var widowFeatures = 'width=' + width + ',height=' + height;
-  //alert(widowFeatures);
+  alert('windowFeatures' + widowFeatures);
   window.open("https://shinycolors.enza.fun/", 'shinycolors', widowFeatures);
-
-
 }
 
 document.getElementById("start_up").onclick = function() {
   var windowSize = get_window_size();// ウィンドウサイズの種類を取得
-  //alert(windowSize);
+  
+  /*custom縦横比の取得*/ 
+  let cwidth = document.getElementById('custom-width');
+  let cheight = document.getElementById('custom-height');
+  //alert(cheight);
+  //alert(cwidth);
 
-  open_shiny_colors(windowSize);//シャニマス起動
+  open_shiny_colors(windowSize, cwidth, cheight);//シャニマス起動
 };
 

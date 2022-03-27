@@ -42,7 +42,7 @@ function open_shiny_colors( windowSize, cwidth, cheight ) {
 
   /*起動*/ 
   var widowFeatures = 'width=' + width + ',height=' + height;
-  alert('windowFeatures' + widowFeatures);
+  //alert('windowFeatures' + widowFeatures);
   window.open("https://shinycolors.enza.fun/", 'shinycolors', widowFeatures);
 }
 

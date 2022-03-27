@@ -9,5 +9,12 @@
     }],
     "action": {
         "default_popup":"html/popup.html"
-    }
+
+    },
+    "icons": {
+        "16": "img/283_16.png",
+        "48": "img/283_48.png",
+        "128": "img/283_128.png"
+    },
+    "author": "Hayabusa1601"
 }
